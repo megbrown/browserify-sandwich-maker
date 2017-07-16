@@ -1,28 +1,30 @@
-var SandwichMaker = (function(maker) {
+"use strict";
 
-	let condimentsPrices = {
-  	mustard: 0.20,
-    mayo: 0.20,
-    honeyMustard: 0.30,
-    oilAndVinegar: 0.40
-  }
+let $ = require("jquery");
 
-  maker.addCondiments = function(selectedTopping) {
-		  	if (selectedTopping === "Mustard") {
-		  		selectedPrice = condimentsPrices.mustard;
-		  	} else if (selectedTopping === "Mayo") {
-		  		selectedPrice = condimentsPrices.mayo;
-		  	} else if (selectedTopping === "Honey Mustard") {
-		  		selectedPrice = condimentsPrices.honeyMustard;
-		  	} else if (selectedTopping === "Oil & Vinegar"){
-		  		selectedPrice = condimentsPrices.oilAndVinegar;
-		  	} else {
-		  		selectedPrice = 0;
-		  	}
-		  	console.log("selected price", selectedPrice);
-		  	return selectedPrice;
-  		};
+let selectedTopping;
+let selectedPrice;
 
- 	return maker;
+let condimentsPrices = {
+	mustard: 0.20,
+	mayo: 0.20,
+	honeyMustard: 0.30,
+	oilAndVinegar: 0.40
+};
 
-}(SandwichMaker || {}));
+function addCondiments(selectedTopping) {
+	if (selectedTopping === "Mustard") {
+		selectedPrice = condimentsPrices.mustard;
+	} else if (selectedTopping === "Mayo") {
+		selectedPrice = condimentsPrices.mayo;
+	} else if (selectedTopping === "Honey Mustard") {
+		selectedPrice = condimentsPrices.honeyMustard;
+	} else if (selectedTopping === "Oil & Vinegar"){
+		selectedPrice = condimentsPrices.oilAndVinegar;
+	} else {
+		selectedPrice = 0;
+	}
+	return selectedPrice;
+}
+
+module.exports = {addCondiments};

@@ -1,13 +1,13 @@
-var SandwichMaker = (function(maker) {
+"use strict";
 
- let totalPrice = 0;
+let $ = require("jquery");
 
- 	maker.addTopping = function(toppingPrice) {
- 			totalPrice = 0;
-      totalPrice += toppingPrice;
-      return totalPrice;
-  };
+let totalPrice = 0;
 
-  return maker;
+function addTopping(toppingPrice) {
+	totalPrice = 0;
+	totalPrice += toppingPrice;
+	return totalPrice;
+}
 
-}(SandwichMaker || {}));
+module.exports = {addTopping};
