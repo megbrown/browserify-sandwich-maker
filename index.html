@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sandwich Maker</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<div class=" container wrapper">
+		<h1>Sandwhich Maker</h1>
+		<div class="row">
+			<div class="col-sm-4">
+				<section class="bread">
+					<h3>Choose your bread</h3>
+					<select id="bread-chooser" name="bread">
+						<option>Please Select</option>
+						<option>Wheat</option>
+						<option>White</option>
+						<option>Sourdough</option>
+						<option>Wrap</option>
+						<option>No Bread</option>
+					</select>
+				</section>
+				<section class="meat">
+					<h3>Choose your meat</h3>
+					<select id="meat-chooser" name="meat">
+						<option>Please Select</option>
+						<option>Turkey</option>
+						<option>Bacon</option>
+						<option>Roastbeef</option>
+						<option>Ham</option>
+						<option>No Meat</option>
+					</select>
+				</section>
+				<section class="cheese">
+					<h3>Choose your cheese</h3>
+					<select id="cheese-chooser" name="cheese">
+						<option>Please Select</option>
+						<option>American</option>
+						<option>Cheddar</option>
+						<option>Swiss</option>
+						<option>Provolone</option>
+						<option>No Cheese</option>
+					</select>
+				</section>
+				<section class="condiments">
+					<h3>Choose your condiments</h3>
+					<select id="condiments-chooser" name="condiments">
+						<option>Please Select</option>
+						<option>Mustard</option>
+						<option>Mayo</option>
+						<option>Honey Mustard</option>
+						<option>Oil & Vinegar</option>
+						<option>No condiments</option>
+					</select>
+				</section>
+				<section class="veggies">
+					<h3>Choose your veggies</h3>
+					<select id="veggies-chooser" name="veggies">
+						<option>Please Select</option>
+						<option>Lettuce</option>
+						<option>Tomato</option>
+						<option>Pickle</option>
+						<option>Onion</option>
+						<option>No veggies</option>
+					</select>
+				</section>
+				<button id="get-price">Get Price</button>
+			</div><!--col-sm-4-->
+			<div class="col-sm-8">
+				<div class="receipt">
+					<div id="sandwich-output"></div>
+					<div id="price-output"></div>
+				</div><!--receipt-->
+			</div><!--col-sm-8-->
+		</div><!--row-->
+	</div><!--container-->
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+	<script src="javascripts/SandwichMaker.js"></script>
+	<script src="javascripts/bread.js"></script>
+	<script src="javascripts/meat.js"></script>
+	<script src="javascripts/cheese.js"></script>
+	<script src="javascripts/condiments.js"></script>
+	<script src="javascripts/veggies.js"></script>
+	<script src="javascripts/DOMhandler.js"></script>
+</body>
+</html>

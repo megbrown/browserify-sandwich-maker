@@ -1,0 +1,11 @@
+button {
+	margin: 2em;
+}
+
+.receipt {
+	border: 1px solid #000;
+	width: 80%;
+	margin: 2em auto;
+	height: 450px;
+	padding: 2em;
+}
